@@ -10,6 +10,7 @@ const projectRouter=require('./routes/project')
 const taskRouter=require('./routes/task')
 const commentRouter=require('./routes/comment')
 const attachmenRouter=require('./routes/attachmen')
+const notificationRouter=require('./routes/notification')
 var app = express();
 
 // view engine setup
@@ -28,6 +29,7 @@ app.use('/project',projectRouter)
 app.use('/task',taskRouter)
 app.use('/comment',commentRouter)
 app.use('/attachmen',attachmenRouter)
+app.use('/notification',notificationRouter)
 
 
 // catch 404 and forward to error handler
